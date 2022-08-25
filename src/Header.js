@@ -3,19 +3,20 @@ import './index.css';
 import logo from "../src/images/logo.svg"
 
 
+
 export default Header
 
 function Header() {
     return (
         <header className='header'>
             <nav className='navbar'>
-                <div className='logo'><img src= {logo}/></div>
+                <div className='logo'><img src= {logo} alt="Logo"/></div>
                 <div className='menu'>
-                    <a href='#'>About</a>
-                    <a href='#'>Careers</a>
-                    <a href='#'>Event</a>
-                    <a href='#'>Products</a>
-                    <a href='#'>Support</a>
+                    <a href='index.html'>About</a>
+                    <a href='index.html'>Careers</a>
+                    <a href='index.html'>Event</a>
+                    <a href='index.html'>Products</a>
+                    <a href='index.html'>Support</a>
                 </div>
             </nav>
 
@@ -23,10 +24,12 @@ function Header() {
                 <div className='banner-content'>
                     <h1>IMMERSIVE EXPERIENCES THAT DELIVER</h1>
                 </div>
-
             </div>
+        </header>
+
+            
+
       
             
-        </header>
     )
 }
