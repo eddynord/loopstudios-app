@@ -6,6 +6,7 @@ import Hero from './Hero'
 import Creations from './Creations';
 import Cards from './Cards';
 import Data from './Data';
+import Footer from './Footer';
 
 
 
@@ -26,7 +27,11 @@ function Container(props) {
       <Header/>
       <Hero/>
       <Creations/>
-      {cardData}
+      <div className='data-cards'>
+        {cardData}
+      </div>
+      <Footer/>
+
 
     </div>
   )

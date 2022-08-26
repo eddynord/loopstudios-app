@@ -9,8 +9,14 @@ export default Cards
 function Cards(props) {
     return(
         <div className='creations-cards'>
-            <img src={props.image} alt= "Creation"/>
-            <h3>{props.title}</h3>
+            
+                <img className='card-image' src={props.image} alt= "Creation"/>
+                <div className='card-text'>
+                    <h3>{props.title}</h3>
+                </div>
         </div>
+
+            
+
     )
 }
