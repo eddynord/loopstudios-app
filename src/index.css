@@ -26,14 +26,14 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1096px;
   margin: auto;
   padding-top: 75px;
 }
 
 .banner {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1096px;
   margin: auto;
   padding-top: 150px;
 }
@@ -43,17 +43,14 @@ body {
   border: 2px solid #fff;
   width: 100%;
   max-width: 420px;
-  
 }
-
-
+  
 .banner-content h1 {
   font-size: 42px;
   padding-left: 20px;
 }
 
 .menu {
-  
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -80,7 +77,6 @@ body {
 .hero-desc {
   width: 100%;
   max-width: 1000px;
-  /* border: thin solid red; */
   background-color: #fff;
   margin-left: -150px;
   padding-left: 75px;
@@ -92,10 +88,12 @@ body {
   
 }
 
+/*CREATIONS SECTION*/
+
 .creations-head {
   padding-top: 150px;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1096px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -127,7 +125,7 @@ button:hover {
 
 .hero-content {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1096px;
   margin: auto;
   display: flex;
   align-items: flex-end;
@@ -146,6 +144,7 @@ button:hover {
 .data-cards {
   padding-bottom: 150px;
 }
+
 .creations-cards {
   position: relative;
   color: #fff;
@@ -161,8 +160,6 @@ button:hover {
 }
   
   
-  
-
 .card-text h3 {
   font-weight: 100;
   font-size:28px;
@@ -171,19 +168,31 @@ button:hover {
 
 .data-cards {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1096px;
   margin: auto;
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  gap: 25.33px;
+  gap: 25.33px; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+  gap: 24px;
+  
+  /* grid-auto-rows: 6rem; */
 }
   
  
 
 
 .card-image {
-  filter: brightness(50%);
+  filter: brightness(40%);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
+
+.card-image:hover {
+  filter: brightness(80%);
+}
+  
 
 
 
@@ -196,7 +205,7 @@ button:hover {
 
 .footer-content {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1096px;
   margin: auto;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -232,5 +241,10 @@ button:hover {
 .copyright {
   color: hsl(0, 0%, 41%);
 }
-  
+
+
+
+/* MEDIA QUERY */
+
+
 
